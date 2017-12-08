@@ -12,3 +12,21 @@
 2017-12-08 13:38:27 ERROR (Thread-9) [PyXiaomiGateway] Cannot connect to Gateway
 2017-12-08 13:38:27 ERROR (Thread-9) [PyXiaomiGateway] No data in response from hub None
 2017-12-08 13:42:03 WARNING (Thread-18) [homeassistant.components.light.hue] Connected to Hue at 192.168.1.13 but not registered.
+2017-12-08 13:45:30 ERROR (Thread-51) [pychromecast.socket_client] Error reading from socket.
+2017-12-08 13:45:30 ERROR (Thread-49) [pychromecast.socket_client] Error reading from socket.
+2017-12-08 13:45:30 ERROR (Thread-37) [pychromecast.socket_client] Error reading from socket.
+2017-12-08 13:45:30 ERROR (Thread-43) [pychromecast.socket_client] Error reading from socket.
+2017-12-08 13:45:30 WARNING (Thread-51) [pychromecast.socket_client] Error communicating with socket, resetting connection
+2017-12-08 13:45:30 WARNING (Thread-49) [pychromecast.socket_client] Error communicating with socket, resetting connection
+2017-12-08 13:45:30 WARNING (Thread-43) [pychromecast.socket_client] Error communicating with socket, resetting connection
+2017-12-08 13:45:30 ERROR (Thread-26) [pychromecast.socket_client] Error reading from socket.
+2017-12-08 13:45:30 WARNING (Thread-37) [pychromecast.socket_client] Error communicating with socket, resetting connection
+2017-12-08 13:45:30 ERROR (Thread-49) [pychromecast.socket_client] Failed to connect, retrying in 5.0s
+2017-12-08 13:45:30 ERROR (Thread-51) [pychromecast.socket_client] Failed to connect, retrying in 5.0s
+2017-12-08 13:45:30 ERROR (Thread-25) [pychromecast.socket_client] Error reading from socket.
+2017-12-08 13:45:30 ERROR (Thread-43) [pychromecast.socket_client] Failed to connect, retrying in 5.0s
+2017-12-08 13:45:30 WARNING (Thread-26) [pychromecast.socket_client] Error communicating with socket, resetting connection
+2017-12-08 13:45:30 ERROR (Thread-37) [pychromecast.socket_client] Failed to connect, retrying in 5.0s
+2017-12-08 13:45:30 WARNING (Thread-25) [pychromecast.socket_client] Error communicating with socket, resetting connection
+2017-12-08 13:45:30 ERROR (Thread-25) [pychromecast.socket_client] Failed to connect, retrying in 5.0s
+2017-12-08 13:45:30 ERROR (Thread-26) [pychromecast.socket_client] Failed to connect, retrying in 5.0s
