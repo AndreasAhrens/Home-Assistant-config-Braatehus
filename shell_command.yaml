@@ -1,0 +1,1 @@
+  get_latest_config: bash /home/homeassistant/.homeassistant/bin/update_config_from_github.sh

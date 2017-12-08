@@ -2,8 +2,8 @@ homeassistant:
   # Name of the location where Home Assistant is running
   name: Braatehus
   # Location required to calculate the time the sun rises and sets
-  latitude: 56.15
-  longitude: 12.5667
+  latitude: 55.795226
+  longitude: 12.967324
   # Impacts weather/sunrise data (altitude above sea level in meters)
   elevation: 0
   # metric for Metric, imperial for Imperial
@@ -21,6 +21,11 @@ frontend:
 
 # Enables configuration UI
 config:
+
+# Z-Wave
+zwave:
+  usb_path: /dev/ttyAMA0
+  network_key: "0x8A, 0x64, 0x13, 0xFC, 0xD3, 0xBF, 0xA7, 0x90, 0x31, 0x9F, 0xA6, 0xF6, 0xD9, 0xD0, 0x2E, 0x53"
 
 http:
   # Secrets are defined in the file secrets.yaml
@@ -63,6 +68,20 @@ sensor:
 tts:
   - platform: google
 
-group: !include groups.yaml
+##############################
+######## INCLUDES ############
+##############################
+
+automation old: !include_dir_merge_list automation/
 automation: !include automations.yaml
+binary_sensor: !include binary_sensors.yaml
+device_tracker: !include device_tracker.yaml
+group: !include groups.yaml
+# light: !include lights.yaml
+media_player: !include mediaplayer.yaml
+notify: !include notify.yaml
+# scene: !include scenes.yaml
 script: !include scripts.yaml
+sensor: !include sensors.yaml
+shell_command: !include shell_command.yaml
+# switch: !include switches.yaml
