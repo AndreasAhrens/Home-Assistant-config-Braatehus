@@ -67,10 +67,6 @@ map:
 # Track the sun
 sun:
 
-# Weather prediction
-sensor:
-  - platform: yr
-
 # Text to speech
 tts:
   - platform: google
@@ -85,7 +81,7 @@ binary_sensor: !include binary_sensors.yaml
 device_tracker: !include device_tracker.yaml
 group: !include groups.yaml
 # light: !include lights.yaml
-media_player: !include mediaplayer.yaml
+# media_player: !include mediaplayer.yaml
 notify: !include notify.yaml
 # scene: !include scenes.yaml
 script: !include scripts.yaml
