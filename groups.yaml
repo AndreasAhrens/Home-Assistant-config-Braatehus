@@ -1,11 +1,15 @@
   Sensative:
     name: Sensative
     entities:
-      - sensor.sensative_strips_burglar
-      - sensor.sensative_strips_burglar_2
-      - sensor.sensative_strips_sourcenodeid
-      - sensor.sensative_strips_sourcenodeid_2
-      - sensor.sensative_strips_access_control
-      - sensor.sensative_strips_access_control_2
-      - binary_sensor.sensor
-      - binary_sensor.sensor_2
+      - sensor.framdorr_burglar
+      - sensor.sidodorr_burglar
+      - sensor.framdorr_sourcenodeid
+      - sensor.sidodorr_sourcenodeid
+      - sensor.framdorr_access_control
+      - sensor.sidodorr_access_control
+      - binary_sensor.framdorr_sensor
+      - binary_sensor.sidodorr_sensor
+      - sensor.framdorr_alarm_level
+      - sensor.framdorr_alarm_type
+      - sensor.sidodorr_alarm_level
+      - sensor.sidodorr_alarm_type
