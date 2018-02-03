@@ -1,6 +1,6 @@
   - platform: template
     sensors:
-      Framdorr_open:
+      framdorr_open:
         friendly_name: "Framdörr"
         device_class: opening
         value_template: "{{ is_state('sensor.framdorr_access_control', '22') }}"
