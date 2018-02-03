@@ -1,12 +1,12 @@
   - platform: template
     sensors:
-      door_open:
+      Framdorr_open:
         friendly_name: "Framdörr"
         device_class: opening
         value_template: "{{ is_state('sensor.framdorr_access_control', '22') }}"
   - platform: template
     sensors:
-      door_open:
+      sidodorr_open:
         friendly_name: "Sidodörr"
         device_class: opening
         value_template: "{{ is_state('sensor.sidodorr_access_control', '22') }}"
