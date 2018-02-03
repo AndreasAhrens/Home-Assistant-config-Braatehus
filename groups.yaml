@@ -4,6 +4,8 @@
       - sensor.sensative_strips_burglar
       - sensor.sensative_strips_burglar_2
       - sensor.sensative_strips_sourcenodeid
-      - sensor.sensative_strips_sourcenodeid
+      - sensor.sensative_strips_sourcenodeid_2
       - sensor.sensative_strips_access_control
       - sensor.sensative_strips_access_control_2
+      - binary_sensor.sensor
+      - binary_sensor.sensor_2
