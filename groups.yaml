@@ -13,3 +13,5 @@
       - sensor.framdorr_alarm_type
       - sensor.sidodorr_alarm_level
       - sensor.sidodorr_alarm_type
+      - binary_sensor.framdorr_open
+      - binary_sensor.sidodorr_open
