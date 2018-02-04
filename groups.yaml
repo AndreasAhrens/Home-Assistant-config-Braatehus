@@ -41,6 +41,7 @@
     name: Hallen
     entities:
       - binary_sensor.framdorr_open
+      - switch.lampa_framsidan_switch
   Hallway_small:
     name: Grovkök
     entities:
@@ -83,7 +84,7 @@
 ###### VIEWS #######
   default_view:
     name: Braatehus
-    view: yes    ## Change to "no" to see the default view and be able to detect new devices and lights
+    view: no    ## Change to "no" to see the default view and be able to detect new devices and lights
     entities:
       - group.devices
       - group.kitchen
@@ -106,8 +107,8 @@
       - group.kitchen
       - group.Hallway
       - group.Hallway_small
-      - switch.lampa_framsidan_switch
-      - switch.lampa_framsidan_switch_2
+      #- switch.lampa_framsidan_switch
+      #- switch.lampa_framsidan_switch_2
       - sensor.lampa_framsidan_energy
       - sensor.lampa_framsidan_power
   debug_view:
