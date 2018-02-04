@@ -93,7 +93,7 @@
       - group.Hallway
       - group.Hallway_small
       - group.Weather
-      - group.System
+      #- group.System
   Upstairs_view:
     name: Ovanvåning
     view: yes
@@ -115,6 +115,7 @@
     name: Debug
     view: yes
     entities:
+      - group.System
       - group.Sensative
       - group.zwave
 
