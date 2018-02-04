@@ -106,6 +106,10 @@
       - group.kitchen
       - group.Hallway
       - group.Hallway_small
+      - switch.lampa_framsidan_switch
+      - switch.lampa_framsidan_switch_2
+      - sensor.lampa_framsidan_energy
+      - sensor.lampa_framsidan_power
   debug_view:
     name: Debug
     view: yes
