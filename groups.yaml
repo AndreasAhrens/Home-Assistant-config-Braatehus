@@ -68,3 +68,47 @@
       - sensor.ram_used_2
       - sensor.fastcom_download
       - sensor.cpu_used
+  Zwave:
+    name: Zwave
+    entities:
+      - zwave._
+      - zwave.__2
+      - zwave.framdorr
+      - zwave.sensative_strips
+      - zwave.zwaveme_razberry_controller_2016_zwave
+      
+
+
+
+###### VIEWS #######
+  default_view:
+    view: yes    ## Change to "no" to see the default view and be able to detect new devices and lights
+    entities:
+      - group.devices
+      - group.kitchen
+      - group.tvroom
+      - group.Bathroom_upstairs
+      - group.Hallway
+      - group.Hallway_small
+      - group.Weather
+      - group.System
+  Upstairs_view:
+    name: Ovanvåning
+    view: yes
+    entities:
+      - group.tvroom
+      - group.Bathroom_upstairs
+  downstairs_view:
+    view: yes
+    name: Bottenvåning
+    entities:
+      - group.kitchen
+      - group.Hallway
+      - group.Hallway_small
+  debug_view:
+    name: Debug
+    view: yes
+    entities:
+      - group.Sensative
+      - 
+
