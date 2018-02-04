@@ -76,7 +76,7 @@
       - zwave.framdorr
       - zwave.sensative_strips
       - zwave.zwaveme_razberry_controller_2016_zwave
-      
+
 
 
 
@@ -110,5 +110,5 @@
     view: yes
     entities:
       - group.Sensative
-      - 
+      - group.zwave
 
