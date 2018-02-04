@@ -45,3 +45,26 @@
     name: Grovkök
     entities:
       - binary_sensor.sidodorr_open
+  Weather:
+    name: Väder
+    entities:
+      - sensor.dark_sky_hourly_summary
+      - sensor.dark_sky_temperature
+      - sensor.dark_sky_wind_speed
+      - sensor.dark_sky_summary
+      - sensor.dark_sky_precip_probability
+      - sensor.dark_sky_precip
+      - sensor.dark_sky_precip_intensity
+      - sensor.dark_sky_humidity
+      - sensor.moon
+      - sensor.season
+      - sun.sun
+      - sensor.solar_angle
+  System:
+    name: System
+    entities:
+      - sensor.current_version
+      - sensor.disk_free_
+      - sensor.ram_used_2
+      - sensor.fastcom_download
+      - sensor.cpu_used
