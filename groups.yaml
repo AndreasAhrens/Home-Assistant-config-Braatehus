@@ -84,7 +84,7 @@
 ###### VIEWS #######
   default_view:
     name: Braatehus
-    view: no    ## Change to "no" to see the default view and be able to detect new devices and lights
+    view: yes    ## Change to "no" to see the default view and be able to detect new devices and lights
     entities:
       - group.devices
       - group.kitchen
