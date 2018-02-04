@@ -15,3 +15,33 @@
       - sensor.sidodorr_alarm_type
       - binary_sensor.framdorr_open
       - binary_sensor.sidodorr_open
+  Devices:
+    name: Enheter
+    entities:
+      - device_tracker.anitasiphonese
+      - device_tracker.tompasiphone
+  Kitchen:
+    name: Kök
+    entities:
+      - light.kok
+      - light.kitchen_1
+      - light.kitchen_2
+  Tvroom:
+    name: Tvrum
+    entities:
+      - light.ovanvaning
+      - light.golvlampa
+      - media_player.apple_tv
+      - remote.apple_tv
+  Bathroom_upstairs:
+    name: Badrum Uppe
+    entities:
+      - light.badrum
+  Hallway:
+    name: Hallen
+    entities:
+      - binary_sensor.framdorr_open
+  Hallway_small:
+    name: Grovkök
+    entities:
+      - binary_sensor.sidodorr_open
