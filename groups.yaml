@@ -29,6 +29,9 @@
       - binary_sensor.fibaro_system_fgms001zw5_motion_sensor_sensor
       - sensor.fibaro_system_fgms001zw5_motion_sensor_luminance
       - sensor.fibaro_system_fgms001zw5_motion_sensor_temperature
+      - binary_sensor.fibaro_system_fgsd002_smoke_sensor_sensor
+      # - sensor.fibaro_system_fgsd002_smoke_sensor_heat
+      - sensor.fibaro_system_fgsd002_smoke_sensor_temperature
   Tvroom:
     name: Tvrum
     entities:
@@ -36,6 +39,8 @@
       - light.golvlampa
       - media_player.apple_tv
       - remote.apple_tv
+      - binary_sensor.fibaro_system_fgsd002_smoke_sensor_sensor_2
+      - sensor.fibaro_system_fgsd002_smoke_sensor_temperature_2
   Bathroom_upstairs:
     name: Badrum Uppe
     entities:
@@ -99,8 +104,10 @@
     name: Smoke Sensors
     entities:
       - binary_sensor.fibaro_system_fgsd002_smoke_sensor_sensor
-      - sensor.fibaro_system_fgsd002_smoke_sensor_heat
+      # - sensor.fibaro_system_fgsd002_smoke_sensor_heat
       - sensor.fibaro_system_fgsd002_smoke_sensor_temperature
+      - binary_sensor.fibaro_system_fgsd002_smoke_sensor_sensor_2
+      - sensor.fibaro_system_fgsd002_smoke_sensor_temperature_2
 
 
 
@@ -117,6 +124,7 @@
       - group.Hallway
       - group.Hallway_small
       - group.Weather
+      - group.garden
       #- group.System
   Upstairs_view:
     name: Ovanvåning
@@ -135,6 +143,7 @@
       #- switch.lampa_framsidan_switch_2
       - sensor.lampa_framsidan_energy
       - sensor.lampa_framsidan_power
+      - group.Alarm_panel
   debug_view:
     name: Debug
     view: yes
