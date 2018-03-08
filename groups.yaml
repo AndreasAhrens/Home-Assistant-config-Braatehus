@@ -72,6 +72,10 @@
       - sensor.ram_used_2
       - sensor.fastcom_download
       - sensor.cpu_used
+  Garden: 
+    name: Trädgård
+    entities:
+      - binary_sensor.sensor
   Zwave:
     name: Zwave
     entities:

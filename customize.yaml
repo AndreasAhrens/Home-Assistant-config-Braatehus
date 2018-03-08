@@ -20,3 +20,5 @@
     friendly_name: Kök ljusstyrka
   sensor.fibaro_system_fgms001zw5_motion_sensor_temperature: 
     friendly_name: Kök temperatur
+  binary_sensor.sensor:
+    friendly_name: Rörelsesensor trädgård
