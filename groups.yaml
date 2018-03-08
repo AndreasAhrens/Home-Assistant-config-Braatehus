@@ -95,6 +95,12 @@
       - sensor.schlage_link_mini_keypad_rfid_sourcenodeid
       - switch.switch_4
       - zwave.schlage_link_mini_keypad_rfid
+  SmokeSensors:
+    name: Smoke Sensors
+    entities:
+      - binary_sensor.fibaro_system_fgsd002_smoke_sensor_sensor
+      - sensor.fibaro_system_fgsd002_smoke_sensor_heat
+      - sensor.fibaro_system_fgsd002_smoke_sensor_temperature
 
 
 
