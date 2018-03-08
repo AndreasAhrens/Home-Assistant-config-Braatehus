@@ -76,6 +76,7 @@
     name: Trädgård
     entities:
       - binary_sensor.sensor
+      - switch.FrontDoor_Switch
   Zwave:
     name: Zwave
     entities:
