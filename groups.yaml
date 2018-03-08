@@ -85,6 +85,16 @@
       - zwave.framdorr
       - zwave.sensative_strips
       - zwave.zwaveme_razberry_controller_2016_zwave
+  Alarm_panel:
+    name: Alarm Panel
+    entities:
+      - sensor.alarm_level_4
+      - sensor.alarm_type_4
+      - sensor.schlage_link_mini_keypad_rfid_access_control
+      - sensor.schlage_link_mini_keypad_rfid_burglar
+      - sensor.schlage_link_mini_keypad_rfid_sourcenodeid
+      - switch.switch_4
+      - zwave.schlage_link_mini_keypad_rfid
 
 
 
