@@ -14,3 +14,9 @@
     friendly_name: Side door
     device_class: opening
     icon: mdi:glassdoor
+  binary_sensor.fibaro_system_fgms001zw5_motion_sensor_sensor:
+    friendly_name: Kök rörelsedetektor 
+  sensor.fibaro_system_fgms001zw5_motion_sensor_luminance:
+    friendly_name: Kök ljusstyrka
+  sensor.fibaro_system_fgms001zw5_motion_sensor_temperature: 
+    friendly_name: Kök temperatur

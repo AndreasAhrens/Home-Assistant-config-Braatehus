@@ -26,6 +26,9 @@
       - light.kok
       - light.kitchen_1
       - light.kitchen_2
+      - binary_sensor.fibaro_system_fgms001zw5_motion_sensor_sensor
+      - sensor.fibaro_system_fgms001zw5_motion_sensor_luminance
+      - sensor.fibaro_system_fgms001zw5_motion_sensor_temperature
   Tvroom:
     name: Tvrum
     entities:
