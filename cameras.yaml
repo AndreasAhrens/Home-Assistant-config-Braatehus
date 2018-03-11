@@ -16,13 +16,13 @@
     still_image_url: http://192.168.1.14/image/jpeg.cgi
 
   - platform: mjpeg
-    name: Köket 4
+    name: Köket 5
     mjpeg_url: http://192.168.1.14/video/mjpg.cgi
     still_image_url: http://192.168.1.14/image/jpeg.cgi
     username: admin
     password: admin
   - platform: mjpeg
-    name: Köket 4
+    name: Köket 6
     mjpeg_url: http://192.168.1.14/video.mjpg
     still_image_url: http://192.168.1.14/image/jpeg.cgi
     username: admin
