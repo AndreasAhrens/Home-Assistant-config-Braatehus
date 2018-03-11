@@ -134,6 +134,7 @@
       - sensor.philio_technology_corporation_psp05_pirmotion_burglar
       - sensor.philio_technology_corporation_psp05_pirmotion_sourcenodeid 
       - zwave.gardenmovement
+      - binary_sensor.Rörelsesensor_trädgård
 
 
 
