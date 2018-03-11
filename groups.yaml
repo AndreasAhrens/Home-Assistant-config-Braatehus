@@ -109,6 +109,17 @@
       - binary_sensor.fibaro_system_fgsd002_smoke_sensor_sensor_2
       - sensor.fibaro_system_fgsd002_smoke_sensor_temperature_2
 
+  cameras:
+    name: Kameror
+    entities:
+      - camera.ffmpeg
+      - camera.koket
+      - camera.koket_2
+      - camera.koket_3
+      - camera.koket_4
+      - camera.koket_5
+      - camera.koket_6
+
 
 
 
@@ -151,4 +162,5 @@
       - group.System
       - group.Sensative
       - group.zwave
+      - group.cameras
 
