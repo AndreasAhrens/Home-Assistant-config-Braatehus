@@ -1,0 +1,5 @@
+  turn_off_motion_garden:
+    sequence:
+      - service: homeassistant.turn_off
+        entity_id:
+          - binary_sensor.sensor
