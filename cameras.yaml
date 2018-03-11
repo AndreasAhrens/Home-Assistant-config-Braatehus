@@ -28,4 +28,15 @@
     username: admin
 
   - platform: ffmpeg
+    name: Köket 7
     input: !secret kitchencam
+
+  - platform: ffmpeg
+    name: Köket 8
+    input: rtsp://192.168.1.14/play1.sdp
+  - platform: ffmpeg
+    name: Köket 9
+    input: rtsp://192.168.1.14/play2.sdp
+  - platform: ffmpeg
+    name: Köket 10
+    input: rtsp://admin@192.168.1.14/play1.sdp
