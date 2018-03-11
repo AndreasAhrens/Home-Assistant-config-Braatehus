@@ -84,7 +84,7 @@ tts:
 automation old: !include_dir_merge_list automation/
 automation: !include automations.yaml
 binary_sensor: !include binary_sensors.yaml
-camera: !include cameras.yaml
+#camera: !include cameras.yaml
 device_tracker: !include device_tracker.yaml
 group: !include groups.yaml
 # light: !include lights.yaml
