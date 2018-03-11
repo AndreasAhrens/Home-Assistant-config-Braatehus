@@ -124,6 +124,17 @@
       - camera.koket_9
       - camera.koket_10
 
+  Garden_motion:
+    name: Trädgården rörelsesensor
+    entities:
+      - zwave.gardenmotion
+      - binary_sensor.sensor
+      - sensor.alarm_level_2
+      - sensor.alarm_type_2
+      - sensor.philio_technology_corporation_psp05_pirmotion_burglar
+      - sensor.philio_technology_corporation_psp05_pirmotion_sourcenodeid 
+      - zwave.gardenmovement
+
 
 
 
@@ -166,5 +177,6 @@
       - group.System
       - group.Sensative
       - group.zwave
+      - group.Garden_motion
       - group.cameras
 
