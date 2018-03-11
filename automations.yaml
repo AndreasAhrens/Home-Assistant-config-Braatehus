@@ -1,12 +1,1 @@
-  - id: 805CE9E4-C3D1-4C56-B3B3-A6EBEC8DF7A1
-    alias: Set binary sensor to off after 1 minute
-      - platform: state
-        entity_id: binary_sensor.sensor
-        to: 'on'
-        for:
-          minutes: 1
-    action:
-      - service: homeassistant.turn_off
-        entity_id:
-          - binary_sensor.sensor
-
+[]
