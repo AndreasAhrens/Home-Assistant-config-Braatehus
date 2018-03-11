@@ -26,3 +26,6 @@
     mjpeg_url: http://192.168.1.14/video.mjpg
     still_image_url: http://192.168.1.14/image/jpeg.cgi
     username: admin
+
+  - platform: ffmpeg
+    input: !secret kitchencam
