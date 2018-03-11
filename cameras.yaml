@@ -1,4 +1,4 @@
   - platform: mjpeg
     name: Köket
-    mjpeg_url: http://192.168.1.14/video/mjpg.cgi
+    mjpeg_url: http://192.168.1.14/video2.mjpg
     still_image_url: http://192.168.1.14/image/jpeg.cgi
