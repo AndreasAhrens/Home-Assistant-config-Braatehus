@@ -2,3 +2,27 @@
     name: Köket
     mjpeg_url: http://192.168.1.14/video2.mjpg
     still_image_url: http://192.168.1.14/image/jpeg.cgi
+  - platform: mjpeg
+    name: Köket 2
+    mjpeg_url: http://192.168.1.14/video/mjpg.cgi
+    still_image_url: http://192.168.1.14/IMAGE.JPG
+  - platform: mjpeg
+    name: Köket 3
+    mjpeg_url: http://192.168.1.14/cgi/mjpg/mjpeg.cgi
+    still_image_url: http://192.168.1.14/image/jpeg.cgi
+  - platform: mjpeg
+    name: Köket 4
+    mjpeg_url: http://192.168.1.14/video.mjpg
+    still_image_url: http://192.168.1.14/image/jpeg.cgi
+
+  - platform: mjpeg
+    name: Köket 4
+    mjpeg_url: http://192.168.1.14/video/mjpg.cgi
+    still_image_url: http://192.168.1.14/image/jpeg.cgi
+    username: admin
+    password: admin
+  - platform: mjpeg
+    name: Köket 4
+    mjpeg_url: http://192.168.1.14/video.mjpg
+    still_image_url: http://192.168.1.14/image/jpeg.cgi
+    username: admin
