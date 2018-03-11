@@ -153,6 +153,7 @@
       - group.Hallway_small
       - group.Weather
       - group.garden
+      - group.Alarm_panel
       #- group.System
   Upstairs_view:
     name: Ovanvåning
@@ -181,4 +182,8 @@
       - group.zwave
       - group.Garden_motion
       - group.cameras
+      - switch.switch
+      - switch.switch_2
+      - switch.switch_3
+      - switch.switch_4
 
