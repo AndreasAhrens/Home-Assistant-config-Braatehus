@@ -1,42 +1,5 @@
-  - platform: mjpeg
-    name: Köket
-    mjpeg_url: http://192.168.1.14/video2.mjpg
-    still_image_url: http://192.168.1.14/image/jpeg.cgi
-  - platform: mjpeg
-    name: Köket 2
-    mjpeg_url: http://192.168.1.14/video/mjpg.cgi
-    still_image_url: http://192.168.1.14/IMAGE.JPG
-  - platform: mjpeg
-    name: Köket 3
-    mjpeg_url: http://192.168.1.14/cgi/mjpg/mjpeg.cgi
-    still_image_url: http://192.168.1.14/image/jpeg.cgi
-  - platform: mjpeg
-    name: Köket 4
-    mjpeg_url: http://192.168.1.14/video.mjpg
-    still_image_url: http://192.168.1.14/image/jpeg.cgi
-
-  - platform: mjpeg
-    name: Köket 5
-    mjpeg_url: http://192.168.1.14/video/mjpg.cgi
-    still_image_url: http://192.168.1.14/image/jpeg.cgi
-    username: admin
-    password: admin
-  - platform: mjpeg
-    name: Köket 6
-    mjpeg_url: http://192.168.1.14/video.mjpg
-    still_image_url: http://192.168.1.14/image/jpeg.cgi
-    username: admin
-
-  - platform: ffmpeg
-    name: Köket 7
-    input: !secret kitchencam
-
-  - platform: ffmpeg
-    name: Köket 8
-    input: rtsp://192.168.1.14/play1.sdp
-  - platform: ffmpeg
-    name: Köket 9
-    input: rtsp://192.168.1.14/play2.sdp
-  - platform: ffmpeg
-    name: Köket 10
-    input: rtsp://admin@192.168.1.14/play1.sdp
+#
+#  - platform: ffmpeg
+#    name: Köket 7
+#    input: !secret kitchencam
+#

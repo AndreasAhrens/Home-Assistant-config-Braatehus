@@ -1,189 +1,190 @@
-  Sensative:
-    name: Sensative
-    entities:
-      - sensor.framdorr_burglar
-      - sensor.sidodorr_burglar
-      - sensor.framdorr_sourcenodeid
-      - sensor.sidodorr_sourcenodeid
-      - sensor.framdorr_access_control
-      - sensor.sidodorr_access_control
-      - binary_sensor.framdorr_sensor
-      - binary_sensor.sidodorr_sensor
-      - sensor.framdorr_alarm_level
-      - sensor.framdorr_alarm_type
-      - sensor.sidodorr_alarm_level
-      - sensor.sidodorr_alarm_type
-      - binary_sensor.framdorr_open
-      - binary_sensor.sidodorr_open
-  Devices:
-    name: Enheter
-    entities:
-      - device_tracker.anitasiphonese
-      - device_tracker.tompasiphone
-  Kitchen:
-    name: Kök
-    entities:
-      - light.kok
-      - light.kitchen_1
-      - light.kitchen_2
-      - binary_sensor.fibaro_system_fgms001zw5_motion_sensor_sensor
-      - sensor.fibaro_system_fgms001zw5_motion_sensor_luminance
-      - sensor.fibaro_system_fgms001zw5_motion_sensor_temperature
-      - binary_sensor.fibaro_system_fgsd002_smoke_sensor_sensor
-      # - sensor.fibaro_system_fgsd002_smoke_sensor_heat
-      - sensor.fibaro_system_fgsd002_smoke_sensor_temperature
-  Tvroom:
-    name: Tvrum
-    entities:
-      - light.ovanvaning
-      - light.golvlampa
-      - media_player.apple_tv
-      - remote.apple_tv
-      - binary_sensor.fibaro_system_fgsd002_smoke_sensor_sensor_2
-      - sensor.fibaro_system_fgsd002_smoke_sensor_temperature_2
-  Bathroom_upstairs:
-    name: Badrum Uppe
-    entities:
-      - light.badrum
-  Hallway:
-    name: Hallen
-    entities:
-      - binary_sensor.framdorr_open
-      - switch.lampa_framsidan_switch
-  Hallway_small:
-    name: Grovkök
-    entities:
-      - binary_sensor.sidodorr_open
-  Weather:
-    name: Väder
-    entities:
-      - sensor.dark_sky_hourly_summary
-      - sensor.dark_sky_temperature
-      - sensor.dark_sky_wind_speed
-      - sensor.dark_sky_summary
-      - sensor.dark_sky_precip_probability
-      - sensor.dark_sky_precip
-      - sensor.dark_sky_precip_intensity
-      - sensor.dark_sky_humidity
-      - sensor.moon
-      - sensor.season
-      - sun.sun
-      - sensor.solar_angle
-  System:
-    name: System
-    entities:
-      - sensor.current_version
-      - sensor.disk_free_
-      - sensor.ram_used_2
-      - sensor.fastcom_download
-      - sensor.cpu_used
-  Garden: 
-    name: Trädgård
-    entities:
-      - binary_sensor.sensor
-      - switch.FrontDoor_Switch
-  Zwave:
-    name: Zwave
-    entities:
-      - zwave._
-      - zwave.__2
-      - zwave.framdorr
-      - zwave.sensative_strips
-      - zwave.zwaveme_razberry_controller_2016_zwave
-  Alarm_panel:
-    name: Alarm Panel
-    entities:
-      - sensor.alarm_level_4
-      - sensor.alarm_type_4
-      - sensor.schlage_link_mini_keypad_rfid_access_control
-      - sensor.schlage_link_mini_keypad_rfid_burglar
-      - sensor.schlage_link_mini_keypad_rfid_sourcenodeid
-      - switch.switch_4
-      - zwave.schlage_link_mini_keypad_rfid
-  SmokeSensors:
-    name: Smoke Sensors
-    entities:
-      - binary_sensor.fibaro_system_fgsd002_smoke_sensor_sensor
-      # - sensor.fibaro_system_fgsd002_smoke_sensor_heat
-      - sensor.fibaro_system_fgsd002_smoke_sensor_temperature
-      - binary_sensor.fibaro_system_fgsd002_smoke_sensor_sensor_2
-      - sensor.fibaro_system_fgsd002_smoke_sensor_temperature_2
-
-  cameras:
-    name: Kameror
-    entities:
-      - camera.ffmpeg
-      - camera.koket
-      - camera.koket_2
-      - camera.koket_3
-      - camera.koket_4
-      - camera.koket_5
-      - camera.koket_6
-      - camera.koket_7
-      - camera.koket_8
-      - camera.koket_9
-      - camera.koket_10
-
-  Garden_motion:
-    name: Trädgården rörelsesensor
-    entities:
-      - zwave.gardenmotion
-      - binary_sensor.sensor
-      - sensor.alarm_level_2
-      - sensor.alarm_type_2
-      - sensor.philio_technology_corporation_psp05_pirmotion_burglar
-      - sensor.philio_technology_corporation_psp05_pirmotion_sourcenodeid 
-      - zwave.gardenmovement
-      - binary_sensor.Rörelsesensor_trädgård
-      - script.turn_off_motion_garden
-
-
-
-
-###### VIEWS #######
-  default_view:
-    name: Braatehus
-    view: yes    ## Change to "no" to see the default view and be able to detect new devices and lights
-    entities:
-      - group.devices
-      - group.kitchen
-      - group.tvroom
-      - group.Bathroom_upstairs
-      - group.Hallway
-      - group.Hallway_small
-      - group.Weather
-      - group.garden
-      - group.Alarm_panel
-      #- group.System
-  Upstairs_view:
-    name: Ovanvåning
-    view: yes
-    entities:
-      - group.tvroom
-      - group.Bathroom_upstairs
-  downstairs_view:
-    view: yes
-    name: Bottenvåning
-    entities:
-      - group.kitchen
-      - group.Hallway
-      - group.Hallway_small
-      #- switch.lampa_framsidan_switch
-      #- switch.lampa_framsidan_switch_2
-      - sensor.lampa_framsidan_energy
-      - sensor.lampa_framsidan_power
-      - group.Alarm_panel
-  debug_view:
-    name: Debug
-    view: yes
-    entities:
-      - group.System
-      - group.Sensative
-      - group.zwave
-      - group.Garden_motion
-      - group.cameras
-      - switch.switch
-      - switch.switch_2
-      - switch.switch_3
-      - switch.switch_4
-
+#  Sensative:
+#    name: Sensative
+#    entities:
+#      - sensor.framdorr_burglar
+#      - sensor.sidodorr_burglar
+#      - sensor.framdorr_sourcenodeid
+#      - sensor.sidodorr_sourcenodeid
+#      - sensor.framdorr_access_control
+#      - sensor.sidodorr_access_control
+#      - binary_sensor.framdorr_sensor
+#      - binary_sensor.sidodorr_sensor
+#      - sensor.framdorr_alarm_level
+#      - sensor.framdorr_alarm_type
+#      - sensor.sidodorr_alarm_level
+#      - sensor.sidodorr_alarm_type
+#      - binary_sensor.framdorr_open
+#      - binary_sensor.sidodorr_open
+#  Devices:
+#    name: Enheter
+#    entities:
+#      - device_tracker.anitasiphonese
+#      - device_tracker.tompasiphone
+#  Kitchen:
+#    name: Kök
+#    entities:
+#      - light.kok
+#      - light.kitchen_1
+#      - light.kitchen_2
+#      - binary_sensor.fibaro_system_fgms001zw5_motion_sensor_sensor
+#      - sensor.fibaro_system_fgms001zw5_motion_sensor_luminance
+#      - sensor.fibaro_system_fgms001zw5_motion_sensor_temperature
+#      - binary_sensor.fibaro_system_fgsd002_smoke_sensor_sensor
+#      # - sensor.fibaro_system_fgsd002_smoke_sensor_heat
+#      - sensor.fibaro_system_fgsd002_smoke_sensor_temperature
+#  Tvroom:
+#    name: Tvrum
+#    entities:
+#      - light.ovanvaning
+#      - light.golvlampa
+#      - media_player.apple_tv
+#      - remote.apple_tv
+#      - binary_sensor.fibaro_system_fgsd002_smoke_sensor_sensor_2
+#      - sensor.fibaro_system_fgsd002_smoke_sensor_temperature_2
+#  Bathroom_upstairs:
+#    name: Badrum Uppe
+#    entities:
+#      - light.badrum
+#  Hallway:
+#    name: Hallen
+#    entities:
+#      - binary_sensor.framdorr_open
+#      - switch.lampa_framsidan_switch
+#  Hallway_small:
+#    name: Grovkök
+#    entities:
+#      - binary_sensor.sidodorr_open
+#  Weather:
+#    name: Väder
+#    entities:
+#      - sensor.dark_sky_hourly_summary
+#      - sensor.dark_sky_temperature
+#      - sensor.dark_sky_wind_speed
+#      - sensor.dark_sky_summary
+#      - sensor.dark_sky_precip_probability
+#      - sensor.dark_sky_precip
+#      - sensor.dark_sky_precip_intensity
+#      - sensor.dark_sky_humidity
+#      - sensor.moon
+#      - sensor.season
+#      - sun.sun
+#      - sensor.solar_angle
+#  System:
+#    name: System
+#    entities:
+#      - sensor.current_version
+#      - sensor.disk_free_
+#      - sensor.ram_used_2
+#      - sensor.fastcom_download
+#      - sensor.cpu_used
+#  Garden: 
+#    name: Trädgård
+#    entities:
+#      - binary_sensor.sensor
+#      - switch.FrontDoor_Switch
+#  Zwave:
+#    name: Zwave
+#    entities:
+#      - zwave._
+#      - zwave.__2
+#      - zwave.framdorr
+#      - zwave.sensative_strips
+#      - zwave.zwaveme_razberry_controller_2016_zwave
+#  Alarm_panel:
+#    name: Alarm Panel
+#    entities:
+#      - sensor.alarm_level_4
+#      - sensor.alarm_type_4
+#      - sensor.schlage_link_mini_keypad_rfid_access_control
+#      - sensor.schlage_link_mini_keypad_rfid_burglar
+#      - sensor.schlage_link_mini_keypad_rfid_sourcenodeid
+#      - switch.switch_4
+#      - zwave.schlage_link_mini_keypad_rfid
+#  SmokeSensors:
+#    name: Smoke Sensors
+#    entities:
+#      - binary_sensor.fibaro_system_fgsd002_smoke_sensor_sensor
+#      # - sensor.fibaro_system_fgsd002_smoke_sensor_heat
+#      - sensor.fibaro_system_fgsd002_smoke_sensor_temperature
+#      - binary_sensor.fibaro_system_fgsd002_smoke_sensor_sensor_2
+#      - sensor.fibaro_system_fgsd002_smoke_sensor_temperature_2
+#
+#  cameras:
+#    name: Kameror
+#    entities:
+#      - camera.ffmpeg
+#      - camera.koket
+#      - camera.koket_2
+#      - camera.koket_3
+#      - camera.koket_4
+#      - camera.koket_5
+#      - camera.koket_6
+#      - camera.koket_7
+#      - camera.koket_8
+#      - camera.koket_9
+#      - camera.koket_10
+#
+#  Garden_motion:
+#    name: Trädgården rörelsesensor
+#    entities:
+#      - zwave.gardenmotion
+#      - binary_sensor.sensor
+#      - sensor.alarm_level_2
+#      - sensor.alarm_type_2
+#      - sensor.philio_technology_corporation_psp05_pirmotion_burglar
+#      - sensor.philio_technology_corporation_psp05_pirmotion_sourcenodeid 
+#      - zwave.gardenmovement
+#      - binary_sensor.Rörelsesensor_trädgård
+#      - script.turn_off_motion_garden
+#
+#
+#
+#
+####### VIEWS #######
+#  default_view:
+#    name: Braatehus
+#    view: yes    ## Change to "no" to see the default view and be able to detect new devices and lights
+#    entities:
+#      - group.devices
+#      - group.kitchen
+#      - group.tvroom
+#      - group.Bathroom_upstairs
+#      - group.Hallway
+#      - group.Hallway_small
+#      - group.Weather
+#      - group.garden
+#      - group.Alarm_panel
+#      #- group.System
+#  Upstairs_view:
+#    name: Ovanvåning
+#    view: yes
+#    entities:
+#      - group.tvroom
+#      - group.Bathroom_upstairs
+#  downstairs_view:
+#    view: yes
+#    name: Bottenvåning
+#    entities:
+#      - group.kitchen
+#      - group.Hallway
+#      - group.Hallway_small
+#      #- switch.lampa_framsidan_switch
+#      #- switch.lampa_framsidan_switch_2
+#      - sensor.lampa_framsidan_energy
+#      - sensor.lampa_framsidan_power
+#      - group.Alarm_panel
+#  debug_view:
+#    name: Debug
+#    view: yes
+#    entities:
+#      - group.System
+#      - group.Sensative
+#      - group.zwave
+#      - group.Garden_motion
+#      - group.cameras
+#      - switch.switch
+#      - switch.switch_2
+#      - switch.switch_3
+#      - switch.switch_4
+#
+#
