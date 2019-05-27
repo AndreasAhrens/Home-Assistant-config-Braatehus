@@ -32,10 +32,10 @@ zwave:
   network_key: "0x8A, 0x64, 0x13, 0xFC, 0xD3, 0xBF, 0xA7, 0x90, 0x31, 0x9F, 0xA6, 0xF6, 0xD9, 0xD0, 0x2E, 0x53"
 
 http:
-  api_password: !secret http_password
-  ssl_certificate: !secret ssl_cert
-  ssl_key: !secret ssl_key
-  base_url: !secret base_url
+  #api_password: !secret http_password
+  #ssl_certificate: !secret ssl_cert
+  #ssl_key: !secret ssl_key
+  #base_url: !secret base_url
   cors_allowed_origins:
     - https://google.com
     - https://home-assistant.io
